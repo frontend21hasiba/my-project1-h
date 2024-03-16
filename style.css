@@ -1,0 +1,163 @@
+body {
+    background-color: rgb(186, 138, 138);
+    color: rgb(6, 6, 6);
+    margin: 0;
+    padding: 0;
+}
+ul , a {list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+header{
+    background-color: rgb(38, 15, 27);
+    padding: 350;
+}
+nav ul li{
+    margin:010px;
+}
+nav ul li a{
+    color: rgb(191, 122, 135);
+    font: size 20px; 
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition:background-color: rgb(107, 28, 107); 
+}
+nav ul li a:hover, nav ul li a:focus {
+    background-color: rgb(52, 5, 38);
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border: 2px;
+}
+.movie{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+h3{
+    display: flex;
+    justify-content: center;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+}
+.movie h4{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+}
+.pictures{
+    display: flex;
+    justify-content: center;
+}
+@keyframes fadeinout{
+   
+    0%{
+        opacity:0;
+}
+40%{
+        opacity: 2;
+}
+100%{
+    opacity: 0;
+}
+play{
+    color:#b0e2cf;
+    font-size: 25px;
+    margin-bottom: 15px;
+    padding:30px;
+    border-radius: 15px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+play a{
+    width: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+  .play-icon {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         font-size:4rem;
+         color: #aaa2a2;
+         padding-left: 15px;
+         border-radius: 100%;
+         cursor: pointer;
+         transition: background-color 0.5s ease, opacity 0.5s ease;
+         opacity: 0; /* Default state for play icons */
+     }
+  
+.item:hover{
+  animation: fadeinout 3s ease-in-out infinite;
+}
+item{
+  
+         background-color: #3e3e3e;
+         border: 2px solid #e8dede;
+         border-radius: 4px;
+         position: relative;
+         overflow: hidden;
+        
+         flex-wrap: wrap;
+         box-shadow: 0 2px 4px rgba(248, 246, 246, 0.1);
+         padding: 40px;
+         margin:60px;
+     }
+  
+     
+  
+    .item:hover .play-icon {
+         opacity: 1; /* Visible on hover */
+     }
+  
+  
+   box {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+  }
+  
+    pictures{
+      display:flex;
+       align-items: center;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: center;
+       }
+
+footer {
+        background-color: #420229;
+        color: rgb(221, 186, 186);
+        text-align: center;
+        padding: 2px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+}
+
+
